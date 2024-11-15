@@ -27,9 +27,11 @@ body {
   margin-right: 20px;
   color: white;
 }
-nav{
+
+nav {
   width: 100%;
 }
+
 .nav-background {
   background-color: #5eb562;
   display: flex;
@@ -56,44 +58,41 @@ nav{
   margin: 44px 0 20px 0;
   font-weight: bold;
 }
-.qnCard{
+
+.qnCard {
   position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 20px;
-  
 }
+
 .mainQ {
-  position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 56vh;
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   margin-top: 70px;
 }
 
 .con {
-  
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 550px;
+  width: 100%;
 }
 
 .question-container {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   background-color: white;
   border-radius: 7px;
   padding: 20px;
-  position: relative;
 }
-.nextBtnCon{
-  /* position: relative; */
+
+.nextBtnCon {
   height: 100px;
 }
 
@@ -104,44 +103,32 @@ nav{
 }
 
 .btnNext {
-  position: absolute;
   width: 110px;
-  right: 0px;
-  bottom: 0px;
   margin-top: 20px;
 }
 
 #login {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   background-color: rgba(94, 181, 98, 0.2);
   border-radius: 10px;
-  height: 70vh;
   display: flex;
   flex-direction: column;
-  position: relative;
+  align-items: center;
   padding: 50px 0;
 }
 
-#login > * {
+.loginTitle, #login img, #login input, .btnStart {
   margin-top: 10px;
-  /* margin-bottom: 20px; */
 }
 
-#login h2 {
+.loginTitle {
   color: #5eb562;
-  margin-top: 35px;
-}
-
-#name {
-  width: 250px;
-  align-self: center;
-  margin-bottom: 10px;
 }
 
 .login-image {
   width: 150px;
   border-radius: 999px;
-  align-self: center;
 }
 
 .form-check {
@@ -149,7 +136,6 @@ nav{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  text-align: left;
 }
 
 .form-check-input {
@@ -159,4 +145,24 @@ nav{
 .form-check-label {
   font-size: 1.1rem;
   margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+  .mainQ {
+      width: 90%;
+      height: auto;
+  }
+
+  .question-container {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .btnNext {
+      width: 100%;
+  }
+
+  #login {
+      width: 90%;
+  }
 }

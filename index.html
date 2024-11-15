@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Quiz</title>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="quiz.js" defer></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="relative-position">
-      <img
-        id="backImage"
-        src="assets/background.png"
-        alt="the background-image"
-        class="background-image"
-      />
-      <nav class="nav nav-background">
-        <img src="assets/quize.png" alt="quiz-image" class="quizImage" />
-        <h4 id="usersName"></h4>
-      </nav>
-      <span id="timer" class="text-danger">00:20</span>
+        <img id="backImage" src="assets/background.png" alt="background-image" class="background-image">
+        <nav class="nav nav-background">
+            <img src="assets/quize.png" alt="quiz-image" class="quizImage">
+            <h4 id="usersName"></h4>
+        </nav>
+        <span id="timer" class="text-danger">00:20</span>
 
-      <div id="login" class="container mt-5">
-        <h2 class="loginTitle">Login</h2>
-        <img src="assets/login.png" alt="login-image" class="login-image" />
-        <input type="text" id="name" class="form-control" placeholder="Name" />
-        <button class="btn btn-success mt-3 btnStart" onclick="startQuiz()">
-          Start
-        </button>
-      </div>
-
-      <div class="qnCard">
-        <div class="mainQ">
-          <div
-            id="questionCounter"
-            class="text-info mt-3"
-            style="visibility: hidden"
-          ></div>
-          <div class="con">
-            <div class="question-container">
-              <div id="quiz" class="container mt-5 d-none">
-                <h3 id="question-text"></h3>
-                <div id="options" class="mb-3"></div>
-              </div>
-            </div>
-
-            <div class="nextBtnCon">
-              <br />
-              <button
-                class="btn btn-success d-none btnNext"
-                id="btnNext"
-                onclick="nextQuestion()"
-              >
-                Next
-              </button>
-            </div>
-          </div>
+        <div id="login" class="container mt-5">
+            <h2 class="loginTitle">Login</h2>
+            <img src="assets/login.png" alt="login-image" class="login-image">
+            <input type="text" id="name" class="form-control" placeholder="Name">
+            <button class="btn btn-success mt-3 btnStart" onclick="startQuiz()">Start</button>
         </div>
-      </div>
+
+        <div class="qnCard">
+            <div class="mainQ">
+                <div id="questionCounter" class="text-info mt-3" style="visibility: hidden"></div>
+                <div class="con">
+                    <div class="question-container">
+                        <div id="quiz" class="container mt-5 d-none">
+                            <h3 id="question-text"></h3>
+                            <div id="options" class="mb-3"></div>
+                        </div>
+                    </div>
+                    <div class="nextBtnCon">
+                        <br>
+                        <button class="btn btn-success d-none btnNext" id="btnNext" onclick="nextQuestion()">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>
