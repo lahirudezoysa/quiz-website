@@ -150,7 +150,7 @@ nav {
 }
 
 #name{
-  width: 300px;
+  width: 270px;
 }
 
 @media (max-width: 600px) {
@@ -176,5 +176,5 @@ nav {
   #name{
     width: 200px;
   }
-  
+
 }
