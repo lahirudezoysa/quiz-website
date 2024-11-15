@@ -93,7 +93,7 @@ nav {
 }
 
 .nextBtnCon {
-  height: 100px;
+  height: 70px;
 }
 
 .btnStart {
@@ -105,6 +105,7 @@ nav {
 .btnNext {
   width: 110px;
   margin-top: 20px;
+  margin-left: 450px;
 }
 
 #login {
@@ -140,11 +141,16 @@ nav {
 
 .form-check-input {
   margin-right: 10px;
+  accent-color: #49b54e;
 }
 
 .form-check-label {
   font-size: 1.1rem;
   margin-left: 5px;
+}
+
+#name{
+  width: 300px;
 }
 
 @media (max-width: 600px) {
@@ -159,10 +165,16 @@ nav {
   }
 
   .btnNext {
-      width: 100%;
+      /* width: 100%; */
+      margin-top: 5px;
+      margin-left: 0px;
   }
 
   #login {
       width: 90%;
   }
+  #name{
+    width: 200px;
+  }
+  
 }
