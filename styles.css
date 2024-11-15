@@ -1,0 +1,162 @@
+body {
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: -1;
+  visibility: hidden;
+}
+
+.quizImage {
+  width: 50px;
+  margin: 25px 35px;
+}
+
+#usersName {
+  margin-right: 20px;
+  color: white;
+}
+nav{
+  width: 100%;
+}
+.nav-background {
+  background-color: #5eb562;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-background-logged-in {
+  background-color: rgba(94, 181, 98, 0.627);
+}
+
+#timer {
+  visibility: hidden;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 130px;
+  right: 50px;
+  font-weight: bolder;
+}
+
+#questionCounter {
+  font-size: 1.25rem;
+  color: black !important;
+  margin: 44px 0 20px 0;
+  font-weight: bold;
+}
+.qnCard{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 20px;
+  
+}
+.mainQ {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 56vh;
+  width: 550px;
+  margin-top: 70px;
+}
+
+.con {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+}
+
+.question-container {
+  width: 550px;
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px;
+  position: relative;
+}
+.nextBtnCon{
+  /* position: relative; */
+  height: 100px;
+}
+
+.btnStart {
+  width: 120px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.btnNext {
+  position: absolute;
+  width: 110px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 20px;
+}
+
+#login {
+  width: 400px;
+  background-color: rgba(94, 181, 98, 0.2);
+  border-radius: 10px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 50px 0;
+}
+
+#login > * {
+  margin-top: 10px;
+  /* margin-bottom: 20px; */
+}
+
+#login h2 {
+  color: #5eb562;
+  margin-top: 35px;
+}
+
+#name {
+  width: 250px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.login-image {
+  width: 150px;
+  border-radius: 999px;
+  align-self: center;
+}
+
+.form-check {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
